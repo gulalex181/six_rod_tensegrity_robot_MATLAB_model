@@ -1,4 +1,4 @@
-% Reductor params
+% Reducer params
 
 i = 19;
 kpdr = 0.81;
