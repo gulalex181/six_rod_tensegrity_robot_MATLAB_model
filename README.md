@@ -1,6 +1,6 @@
 # Six rod mobile tensegrity-robot model in MATLAB
 
-The model is developed in Simulink by using Simscape Multibody library.
+The model is developed in Simulink by using Simscape Multibody library. MATLAB version - 2021a.
 
 FILES:
 
