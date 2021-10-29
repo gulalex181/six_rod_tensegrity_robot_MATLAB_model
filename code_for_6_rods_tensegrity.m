@@ -1,6 +1,5 @@
 %% Nodes
 
-%scale = 33.68;
 scale = 24;
 
 n1 = [-7.5/scale; -8.42/scale; 0];
@@ -85,7 +84,7 @@ if rod_vector_6(3) < 0
     rod_angle_6 = 180 - rod_angle_6;
 end
 
-%% Spools params
+%% Spools parameters
 
 spool_active_radius = 0.003; % m
 spool_active_length = 0.015; % m
@@ -102,7 +101,7 @@ spool_passive_color = [255/255 255/255 255/255];
 cable_color = [0/255 255/255 0/255];
 cable_passive_color = [255/255 0/255 0/255];
 
-%% Rods params
+%% Rods parameters
 
 % active rods: 2, 3, 6
 % passive rods: 1, 4, 5
@@ -132,7 +131,7 @@ rod_color_with_drive = [100/255 100/255 100/255];
 rod_opacity = 1;
 rod_opacity_with_drive = 1;
 
-%% Rods ends params
+%% Rods ends parameters
 
 rod_end_offset = rod_length / 2;
 rod_end_offset_with_drive = rod_length_with_drive / 2;
@@ -148,11 +147,11 @@ rod_end_color_with_drive= [100/255 100/255 100/255];
 rod_end_opacity = 1;
 rod_end_opacity_with_drive = 1;
 
-%% Springs params
+%% Springs parameters
 
 spring_pretension = 1; % N
-spring_stiffness = 300; % N/m % 500 the same
-spring_damping = 150; % N/m/s % 250 the same
+spring_stiffness = 300; % N/m
+spring_damping = 150; % N/m/s
 
 spring_initial_length_1  = norm(n5 - n1);  % m
 spring_initial_length_2  = norm(n6 - n1);  % m
@@ -211,7 +210,7 @@ spring_natural_length_22 = spring_initial_length_22 - spring_pretension / spring
 spring_natural_length_23 = spring_initial_length_23 - spring_pretension / spring_stiffness; % m
 spring_natural_length_24 = spring_initial_length_24 - spring_pretension / spring_stiffness; % m
 
-%% Contact params
+%% Contact parameters
 
 contact_stiffness = 1e6;
 contact_damping = 1e3;
@@ -221,9 +220,6 @@ contact_dynamic_friction_coef = 0.6;
 contact_critical_velocity = 0.001;
 
 %% Load
-
-% run car model
-% moment is a vector
 
 load_radius = 0.1; % m
 load_mass = 0.5; % kg
@@ -263,7 +259,6 @@ load_spring_natural_length_6 = load_spring_initial_length_6 - load_spring_preten
 %% World
 
 plane_offset = -(rod_length/2 + 0.032 + rod_radius); % m
-%plane_offset = -(rod_length/2 + rod_radius); % m
 plane_length_x = 10; % m
 plane_length_y = 10; % m
 grivity_z = -9.80665; % m*s^2

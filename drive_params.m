@@ -1,14 +1,14 @@
-% Reducer params
+% Reducer parameters
 
 i = 19;
 kpdr = 0.81;
 Jp = 0.05*10^(-7); % kg*m^2 
 
-% Load params
+% Load parameters
 
 Jnagr = 0.027*10^(-7); % kg*m^2 
 
-% Motor params
+% Motor parameters
 
 R = 5.3; % Ohm
 L = 0.14 / 1000; % H
